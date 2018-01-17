@@ -11,42 +11,37 @@ function create_user() {
 clear
 echo ""
 echo ""
-useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $uname
-exp="$(chage -l $uname | grep "Account expires" | awk -F": " '{print $2}')"
-echo -e "$pass\n$pass\n"|passwd $uname &> /dev/null
-echo -e ""
-echo -e "=======================================
-echo -e "============BERITA HITZ SSH============
-echo -e "=======================================
+<BR><font color='blue'>=======================================</font>
+<BR><font color='red'>============BERITA HITZ SSH============</font>
+<font color='blue'>=======================================</font>
 echo -e " Host/IP      : $myip" 
 echo -e " Username     : $uname" 
 echo -e " Password     : $pass" 
 echo -e " Port Dropbear: 80,442,109" 
 echo -e " Port OpenSSH : 22,143" 
 echo -e " Port Squid   : 8000,8080,3128"
-echo -e " port ssl     : 444"
-echo -e "======================================= 
-echo -e "        Aktif Sampai: $exp"
-echo -e "=======================================
-echo -e "BACA BAIK BAIK PERATURAN DI BAWAH INI"
-echo -e " -DILARANG MELAKUKAN SEGALA MACAM HAL YANG MERUGIKAN SERVER"
-echo -e " – DILARANG BERMAIN GAME PLAYSTATION"
-echo -e " – DILARANG MELAKUKAN MULTI LOGIN"
-echo -e " – DILARANG DOWNLOAD TORRENT FILE"
-echo -e " – DILARANG CARDING/HACKING"
-echo -e " – DILARANG DDOS"
-echo -e " – DILARANG SPAM"
-echo -e "======================================="
-echo -e "PELANGGARAN TERHADAP ATURAN DI ATAS AKAN MENYEBABKAN ACCOUNT ANDA DIHAPUS TANPA PEMBERITAHUAN SEBELUMNYA."
-echo -e "======================================="
-echo -e "JANGAN" LUPA SUPORTNYA AGAR ACOUN KALIAN AKTIF SELAMANYA"
-echo -e "APABILA ADA GANGGUAN/ERROR', SEGERA HUBUNGI ADMIN"
-echo -e "SELALU CEK GROUP UNTUK MELIHAT UPDATE TERBARU."
-echo -e "======================================="
-echo -e "===SUPPORTED BY BERITA HITZ CHANNELH=="
-echo -e "======================================
-    
-echo -e "            "
+echo -e " port ssl     : 444
+echo -e "<font color='blue'>=======================================</font>" 
+echo -e "        font color='red'>Aktif Sampai: $exp" </font> ""
+echo -e "<font color='blue'>=======================================</font>"
+echo -e "<BR><font color='#8A2BE2'>BACA BAIK BAIK PERATURAN DI BAWAH INI</font>"
+echo -e "<BR><font color='#7FFF00'> – DILARANG MELAKUKAN SEGALA MACAM HAL YANG MERUGIKAN SERVER</font>"
+echo -e "<BR><font color='#7FFFD4'> – DILARANG BERMAIN GAME PLAYSTATION</font>"
+echo -e "<BR><font color='#FF1493'> – DILARANG MELAKUKAN MULTI LOGIN</font>"
+echo -e "<BR><font color='#FFD700'> – DILARANG DOWNLOAD TORRENT FILE</font>"
+echo -e "<BR><font color='#ADFF2F'> – DILARANG CARDING/HACKING</font>"
+echo -e "<BR><font color='#EE82EE'> – DILARANG DDOS</font>"
+echo -e "<BR><font color='#FFFF00'> – DILARANG SPAM</font>"
+echo -e "<BR><font color='blue'>=======================================</font>"
+echo -e "<BR><font color='red'>PELANGGARAN TERHADAP ATURAN DI ATAS AKAN MENYEBABKAN ACCOUNT ANDA DIHAPUS TANPA PEMBERITAHUAN SEBELUMNYA.</font>"
+echo -e "<BR><font color='blue'>=======================================</font>"
+echo -e "<BR><font color='#008080'>JANGAN LUPA SUPORTNYA AGAR ACOUN KALIAN AKTIF SELAMANYA </font>"
+echo -e "<BR><font color='#9400D3'>APABILA ADA GANGGUAN/ERROR', SEGERA HUBUNGI ADMIN</font>"
+echo -e "<BR><font color='#D2B48C'>SELALU CEK GROUP UNTUK MELIHAT UPDATE TERBARU.</font>"
+echo -e "<BR><font color='blue'>=======================================</font>"
+echo -e "<BR><font color='red'>===SUPPORTED BY BERITA HITZ CHANNELH==</font>"
+echo -e "<font color='blue'>======================================</font>"
+
 	myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
 	#echo "Config OVPN (http://$myip/client.tar)" 
 }
