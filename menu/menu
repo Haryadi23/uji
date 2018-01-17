@@ -15,24 +15,37 @@ useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $uname
 exp="$(chage -l $uname | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$pass\n$pass\n"|passwd $uname &> /dev/null
 echo -e ""
-echo -e "Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·" 
-echo -e " Informasi Akun Baru SSH Server Premium" 
-echo -e "========================================="
-echo -e "     Host/IP: $myip" 
-echo -e "     Username: $uname" 
-echo -e "     Password: $pass" 
-echo -e "     Port Dropbear: 80, 443,109" 
-echo -e "     Port OpenSSH: 22,143" 
-echo -e "     Port Squid: 8000, 8080,3128" 
-echo -e "     ------------------------------------" 
-echo -e "     Aktif Sampai: $exp" 
-echo -e "=========================================" 
-echo -e "TOS/Terms Of Service :" 
-echo -e " 1. No DDOS No HACKING" 
-echo -e " 2. No CARDING No SPAMING"
-echo -e " 3. No MULTI LOGIN" 
-echo -e " 4. No TORENT"
-echo -e "WWW MASADIRIYANTO COM"
+echo -e "=======================================
+echo -e "============BERITA HITZ SSH============
+echo -e "=======================================
+echo -e " Host/IP      : $myip" 
+echo -e " Username     : $uname" 
+echo -e " Password     : $pass" 
+echo -e " Port Dropbear: 80,442,109" 
+echo -e " Port OpenSSH : 22,143" 
+echo -e " Port Squid   : 8000,8080,3128"
+echo -e " port ssl     : 444"
+echo -e "======================================= 
+echo -e "        Aktif Sampai: $exp"
+echo -e "=======================================
+echo -e "BACA BAIK BAIK PERATURAN DI BAWAH INI"
+echo -e " -DILARANG MELAKUKAN SEGALA MACAM HAL YANG MERUGIKAN SERVER"
+echo -e " – DILARANG BERMAIN GAME PLAYSTATION"
+echo -e " – DILARANG MELAKUKAN MULTI LOGIN"
+echo -e " – DILARANG DOWNLOAD TORRENT FILE"
+echo -e " – DILARANG CARDING/HACKING"
+echo -e " – DILARANG DDOS"
+echo -e " – DILARANG SPAM"
+echo -e "======================================="
+echo -e "PELANGGARAN TERHADAP ATURAN DI ATAS AKAN MENYEBABKAN ACCOUNT ANDA DIHAPUS TANPA PEMBERITAHUAN SEBELUMNYA."
+echo -e "======================================="
+echo -e "JANGAN" LUPA SUPORTNYA AGAR ACOUN KALIAN AKTIF SELAMANYA"
+echo -e "APABILA ADA GANGGUAN/ERROR', SEGERA HUBUNGI ADMIN"
+echo -e "SELALU CEK GROUP UNTUK MELIHAT UPDATE TERBARU."
+echo -e "======================================="
+echo -e "===SUPPORTED BY BERITA HITZ CHANNELH=="
+echo -e "======================================
+    
 echo -e "            "
 	myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
 	#echo "Config OVPN (http://$myip/client.tar)" 
@@ -193,7 +206,7 @@ kern=$( uname -r )
 # Date of benchmark 
 bdates=$( date )
 # Output of results 
-echo "Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·"
+echo "Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г"
 echo "System Info VPS Server SG.Vultr" | tee -a $HOME/bench.log 
 echo "-----------" | tee -a $HOME/bench.log 
 echo "Hostname  : $hn" | tee -a $HOME/bench.log 
@@ -206,7 +219,7 @@ echo "Frequency : $freq MHz" | tee -a $HOME/bench.log
 echo "Uptime    : $up" | tee -a $HOME/bench.log 
 echo "Memory    : $tram MB" | tee -a $HOME/bench.log 
 echo "Swap      : $vram MB" | tee -a $HOME/bench.log 
-echo "Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г· www masadiriyanto com Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·"
+echo "Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г· BERITA HITZ SSH BY HARYADI ARIE Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·Г·"
 PS3='Silahkan ketik nomor pilihan anda lalu tekan enter: '
 options=("Buat User" "Perbarui User" "Hapus User" "Semua User" "User Belum Kadaluarsa" "User Sudah Kadaluarsa" "Restart Server" "Ganti Password User" "Ganti Password VPS" "Used Data By Users" "bench-network" "Ram Status" "Bersihkan cache ram" "Monitor Multi Login" "Ganti Port OpenVPN" "Ganti Port Dropbear" "Ganti Port Squid3" "Speedtest" "Quit")
 select opt in "${options[@]}"
